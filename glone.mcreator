@@ -68,7 +68,7 @@
     {
       "name": "YouDiedProc",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "you_died_proc",
       "metadata": {
