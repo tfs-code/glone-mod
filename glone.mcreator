@@ -16,8 +16,7 @@
         "files": [
           "src/main/java/net/mcreator/glone/procedures/ReincarnationProcedure.java"
         ]
-      },
-      "path": "~/George"
+      }
     },
     {
       "name": "AfterLife",
@@ -30,8 +29,7 @@
           "src/main/resources/data/glone/dimension_type/after_life.json",
           "src/main/resources/data/glone/dimension/after_life.json"
         ]
-      },
-      "path": "~/George"
+      }
     },
     {
       "name": "BlocksBrokenCount",
@@ -49,8 +47,7 @@
         "files": [
           "src/main/java/net/mcreator/glone/procedures/BlocksBrokenCountProcedure.java"
         ]
-      },
-      "path": "~/Tyler/BlocksBroken"
+      }
     },
     {
       "name": "YouDied",
@@ -62,8 +59,7 @@
         "files": [
           "src/main/resources/data/glone/advancements/you_died.json"
         ]
-      },
-      "path": "~/George"
+      }
     },
     {
       "name": "YouDiedProc",
@@ -81,8 +77,7 @@
         "files": [
           "src/main/java/net/mcreator/glone/procedures/YouDiedProcProcedure.java"
         ]
-      },
-      "path": "~/George"
+      }
     }
   ],
   "variable_elements": [
@@ -108,9 +103,9 @@
   },
   "metadata": {
     "files": [
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/glone/GloneMod.java",
       "src/main/java/net/mcreator/glone/network/GloneModVariables.java",
-      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/mods.toml"
     ]
   },
