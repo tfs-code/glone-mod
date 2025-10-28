@@ -17,6 +17,19 @@
           "src/main/java/net/mcreator/glone/procedures/TestProcedure.java"
         ]
       }
+    },
+    {
+      "name": "Test2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_2",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/glone/procedures/Test2Procedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -28,8 +41,8 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/glone/GloneMod.java",
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/glone/GloneMod.java",
       "src/main/resources/META-INF/mods.toml"
     ]
   },
