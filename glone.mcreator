@@ -30,6 +30,19 @@
           "src/main/java/net/mcreator/glone/procedures/Test2Procedure.java"
         ]
       }
+    },
+    {
+      "name": "Test4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_4",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/glone/procedures/Test4Procedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
