@@ -32,9 +32,35 @@
         ]
       },
       "path": "~/George"
+    },
+    {
+      "name": "BlocksBrokenCount",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blocks_broken_count",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/glone/procedures/BlocksBrokenCountProcedure.java"
+        ]
+      },
+      "path": "~/Tyler/BlocksBroken"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "BlocksBroken",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
@@ -47,8 +73,9 @@
   },
   "metadata": {
     "files": [
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/glone/GloneMod.java",
+      "src/main/java/net/mcreator/glone/network/GloneModVariables.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/mods.toml"
     ]
   },
@@ -61,7 +88,12 @@
       },
       {
         "name": "Tyler",
-        "children": []
+        "children": [
+          {
+            "name": "BlocksBroken",
+            "children": []
+          }
+        ]
       }
     ]
   },
