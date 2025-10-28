@@ -68,7 +68,7 @@
     {
       "name": "YouDiedProc",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "you_died_proc",
       "metadata": {
@@ -83,6 +83,38 @@
         ]
       },
       "path": "~/Afterlife"
+    },
+    {
+      "name": "TeleportOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/glone/procedures/TeleportOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/Potential Abilities"
+    },
+    {
+      "name": "Teleport",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/glone/network/TeleportMessage.java"
+        ]
+      },
+      "path": "~/Potential Abilities"
     }
   ],
   "variable_elements": [
@@ -103,15 +135,17 @@
   "language_map": {
     "en_us": {
       "advancements.you_died.title": "You Died",
-      "advancements.you_died.descr": "Congrats you died"
+      "advancements.you_died.descr": "Congrats you died",
+      "key.glone.teleport": "Teleport"
     }
   },
   "metadata": {
     "files": [
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/glone/GloneMod.java",
       "src/main/java/net/mcreator/glone/network/GloneModVariables.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/mods.toml"
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/net/mcreator/glone/init/GloneModKeyMappings.java"
     ]
   },
   "foldersRoot": {
@@ -129,6 +163,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Potential Abilities",
+        "children": []
       }
     ]
   },
