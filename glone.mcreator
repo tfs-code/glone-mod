@@ -30,6 +30,19 @@
           "src/main/java/net/mcreator/glone/procedures/Test2Procedure.java"
         ]
       }
+    },
+    {
+      "name": "Test3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_3",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/glone/procedures/Test3Procedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -41,8 +54,8 @@
   },
   "metadata": {
     "files": [
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/glone/GloneMod.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/mods.toml"
     ]
   },
