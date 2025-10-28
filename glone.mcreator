@@ -30,7 +30,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "George",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "glone",
