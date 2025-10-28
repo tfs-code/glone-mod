@@ -51,6 +51,38 @@
         ]
       },
       "path": "~/Tyler/BlocksBroken"
+    },
+    {
+      "name": "YouDied",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "you_died",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/glone/advancements/you_died.json"
+        ]
+      },
+      "path": "~/George"
+    },
+    {
+      "name": "YouDiedProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "you_died_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/glone/procedures/YouDiedProcProcedure.java"
+        ]
+      },
+      "path": "~/George"
     }
   ],
   "variable_elements": [
@@ -69,13 +101,16 @@
   },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "advancements.you_died.title": "You Died",
+      "advancements.you_died.descr": "Congrats you died"
+    }
   },
   "metadata": {
     "files": [
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/glone/GloneMod.java",
       "src/main/java/net/mcreator/glone/network/GloneModVariables.java",
-      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/mods.toml"
     ]
   },
