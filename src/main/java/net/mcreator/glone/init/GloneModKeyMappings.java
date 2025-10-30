@@ -15,6 +15,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.glone.network.TeleportMessage;
+import net.mcreator.glone.network.OpendebugMessage;
 import net.mcreator.glone.GloneMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -32,10 +33,24 @@ public class GloneModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping OPENDEBUG = new KeyMapping("key.glone.opendebug", GLFW.GLFW_KEY_PERIOD, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				GloneMod.PACKET_HANDLER.sendToServer(new OpendebugMessage(0, 0));
+				OpendebugMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(TELEPORT);
+		event.register(OPENDEBUG);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -44,6 +59,7 @@ public class GloneModKeyMappings {
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
 				TELEPORT.consumeClick();
+				OPENDEBUG.consumeClick();
 			}
 		}
 	}

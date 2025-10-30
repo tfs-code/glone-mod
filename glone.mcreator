@@ -131,6 +131,120 @@
         ]
       },
       "path": "~/Potential Abilities"
+    },
+    {
+      "name": "CorruptedEnderPearl",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrupted_ender_pearl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/glone/models/item/corrupted_ender_pearl.json",
+          "src/main/java/net/mcreator/glone/item/CorruptedEnderPearlItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Debugmenu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debugmenu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/glone/client/gui/DebugmenuScreen.java",
+          "src/main/java/net/mcreator/glone/network/DebugmenuButtonMessage.java",
+          "src/main/java/net/mcreator/glone/world/inventory/DebugmenuMenu.java"
+        ]
+      },
+      "path": "~/debug"
+    },
+    {
+      "name": "Sendtooverworld",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sendtooverworld",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/glone/procedures/SendtooverworldProcedure.java"
+        ]
+      },
+      "path": "~/debug"
+    },
+    {
+      "name": "Sendtoafterlife",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sendtoafterlife",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/glone/procedures/SendtoafterlifeProcedure.java"
+        ]
+      },
+      "path": "~/debug"
+    },
+    {
+      "name": "OpendebugOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "opendebug_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/glone/procedures/OpendebugOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/debug"
+    },
+    {
+      "name": "Opendebug",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "opendebug",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/glone/network/OpendebugMessage.java"
+        ]
+      },
+      "path": "~/debug"
     }
   ],
   "variable_elements": [
@@ -143,7 +257,7 @@
     {
       "name": "TeleportCooldown",
       "type": "logic",
-      "scope": "map",
+      "scope": "player_lifetime",
       "value": "false"
     }
   ],
@@ -158,7 +272,11 @@
     "en_us": {
       "advancements.you_died.title": "You Died",
       "advancements.you_died.descr": "Congrats you died",
-      "key.glone.teleport": "Teleport"
+      "key.glone.teleport": "Teleport",
+      "item.glone.corrupted_ender_pearl": "Corrupted Ender Pearl",
+      "gui.glone.debugmenu.button_overworld": "overworld",
+      "gui.glone.debugmenu.button_afterlife": "afterlife",
+      "key.glone.opendebug": "Opendebug"
     }
   },
   "metadata": {
@@ -167,7 +285,11 @@
       "src/main/java/net/mcreator/glone/network/GloneModVariables.java",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/mods.toml",
-      "src/main/java/net/mcreator/glone/init/GloneModKeyMappings.java"
+      "src/main/java/net/mcreator/glone/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/glone/init/GloneModMenus.java",
+      "src/main/java/net/mcreator/glone/init/GloneModScreens.java",
+      "src/main/java/net/mcreator/glone/init/GloneModKeyMappings.java",
+      "src/main/java/net/mcreator/glone/init/GloneModItems.java"
     ]
   },
   "foldersRoot": {
@@ -189,6 +311,10 @@
       {
         "name": "Potential Abilities",
         "children": []
+      },
+      {
+        "name": "debug",
+        "children": []
       }
     ]
   },
@@ -205,6 +331,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.glone"
   },
   "mcreatorVersion": 202500228610

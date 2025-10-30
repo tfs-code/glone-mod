@@ -1,5 +1,9 @@
 {
   "advancements.you_died.title": "You Died",
   "advancements.you_died.descr": "Congrats you died",
-  "key.glone.teleport": "Teleport"
+  "key.glone.teleport": "Teleport",
+  "item.glone.corrupted_ender_pearl": "Corrupted Ender Pearl",
+  "gui.glone.debugmenu.button_overworld": "overworld",
+  "gui.glone.debugmenu.button_afterlife": "afterlife",
+  "key.glone.opendebug": "Opendebug"
 }

@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "PERIOD",
+    "keyBindingName": "Opendebug",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "OpendebugOnKeyPressed"
+    }
+  }
+}
