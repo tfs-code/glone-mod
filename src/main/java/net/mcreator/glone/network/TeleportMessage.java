@@ -51,7 +51,7 @@ public class TeleportMessage {
 			return;
 		if (type == 0) {
 
-			TeleportOnKeyPressedProcedure.execute(entity);
+			TeleportOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

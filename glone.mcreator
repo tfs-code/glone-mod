@@ -95,6 +95,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -123,6 +139,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0.0"
+    },
+    {
+      "name": "TeleportCooldown",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -141,9 +163,9 @@
   },
   "metadata": {
     "files": [
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/glone/GloneMod.java",
       "src/main/java/net/mcreator/glone/network/GloneModVariables.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/glone/init/GloneModKeyMappings.java"
     ]
