@@ -226,6 +226,32 @@
         ]
       },
       "path": "~/debug"
+    },
+    {
+      "name": "XPSyringeEmpty",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_syringe_empty",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/glone/models/item/xp_syringe_empty.json",
+          "src/main/java/net/mcreator/glone/item/XPSyringeEmptyItem.java"
+        ]
+      }
+    },
+    {
+      "name": "XPSyringeFull",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_syringe_full",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/glone/item/XPSyringeFullItem.java",
+          "src/main/resources/assets/glone/models/item/xp_syringe_full.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -257,7 +283,9 @@
       "item.glone.corrupted_ender_pearl": "Corrupted Ender Pearl",
       "gui.glone.debugmenu.button_overworld": "overworld",
       "gui.glone.debugmenu.button_afterlife": "afterlife",
-      "key.glone.opendebug": "Opendebug"
+      "key.glone.opendebug": "Opendebug",
+      "item.glone.xp_syringe_empty": "XP Syringe Empty",
+      "item.glone.xp_syringe_full": "XP Syringe Full"
     }
   },
   "metadata": {

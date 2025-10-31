@@ -5,5 +5,7 @@
   "item.glone.corrupted_ender_pearl": "Corrupted Ender Pearl",
   "gui.glone.debugmenu.button_overworld": "overworld",
   "gui.glone.debugmenu.button_afterlife": "afterlife",
-  "key.glone.opendebug": "Opendebug"
+  "key.glone.opendebug": "Opendebug",
+  "item.glone.xp_syringe_empty": "XP Syringe Empty",
+  "item.glone.xp_syringe_full": "XP Syringe Full"
 }
