@@ -34,25 +34,6 @@
       "path": "~/Afterlife"
     },
     {
-      "name": "BlocksBrokenCount",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blocks_broken_count",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/glone/procedures/BlocksBrokenCountProcedure.java"
-        ]
-      },
-      "path": "~/Overworld"
-    },
-    {
       "name": "YouDied",
       "type": "achievement",
       "compiles": true,
@@ -301,12 +282,7 @@
       },
       {
         "name": "Overworld",
-        "children": [
-          {
-            "name": "BlocksBroken",
-            "children": []
-          }
-        ]
+        "children": []
       },
       {
         "name": "Potential Abilities",
