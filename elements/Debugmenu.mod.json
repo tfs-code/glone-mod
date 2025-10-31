@@ -21,8 +21,8 @@
           },
           "width": 72,
           "height": 20,
-          "x": 143,
-          "y": 53,
+          "x": 132,
+          "y": 44,
           "locked": false
         }
       },
@@ -37,8 +37,8 @@
           },
           "width": 72,
           "height": 20,
-          "x": 144,
-          "y": 80,
+          "x": 132,
+          "y": 62,
           "locked": false
         }
       }
@@ -48,7 +48,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

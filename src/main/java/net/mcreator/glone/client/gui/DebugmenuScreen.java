@@ -82,7 +82,7 @@ public class DebugmenuScreen extends AbstractContainerScreen<DebugmenuMenu> impl
 				GloneMod.PACKET_HANDLER.sendToServer(new DebugmenuButtonMessage(0, x, y, z));
 				DebugmenuButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 17, this.topPos + 16, 72, 20).build();
+		}).bounds(this.leftPos + 6, this.topPos + 7, 72, 20).build();
 		this.addRenderableWidget(button_overworld);
 		button_afterlife = Button.builder(Component.translatable("gui.glone.debugmenu.button_afterlife"), e -> {
 			int x = DebugmenuScreen.this.x;
@@ -91,7 +91,7 @@ public class DebugmenuScreen extends AbstractContainerScreen<DebugmenuMenu> impl
 				GloneMod.PACKET_HANDLER.sendToServer(new DebugmenuButtonMessage(1, x, y, z));
 				DebugmenuButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}).bounds(this.leftPos + 18, this.topPos + 43, 72, 20).build();
+		}).bounds(this.leftPos + 6, this.topPos + 25, 72, 20).build();
 		this.addRenderableWidget(button_afterlife);
 	}
 }
